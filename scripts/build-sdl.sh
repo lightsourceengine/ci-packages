@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-SDL_VERSION="SDL2-2.0.12"
+SDL_VERSION="SDL2-2.0.14"
 SDL_SRC_ROOT="/tmp/${SDL_VERSION}"
 ARCH="$1"
 
