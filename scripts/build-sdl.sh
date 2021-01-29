@@ -11,12 +11,12 @@ fi
 
 case "${ARCH}" in
   "armv6l")
-    export CFLAGS="-march=armv6zk"
-    export LDFLAGS="-march=armv6zk"
+    export CFLAGS="-march=armv6zk -mfloat-abi=hard -mfpu=vfp"
+    export LDFLAGS="-march=armv6zk -mfloat-abi=hard -mfpu=vfp"
     ;;
   "armv7l")
-    export CFLAGS="-march=armv7-a -mfpu=neon"
-    export LDFLAGS="-march=armv7-a -mfpu=neon"
+    export CFLAGS="-march=armv7-a -mfloat-abi=hard -mfpu=neon"
+    export LDFLAGS="-march=armv7-a -mfloat-abi=hard -mfpu=neon"
     ;;
   *)
     echo "Argument must be an architecture of [armv6l, armv7l]"
